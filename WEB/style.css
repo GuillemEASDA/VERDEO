@@ -1,0 +1,627 @@
+/* ==================================================
+   CONFIGURACIÓN GENERAL
+   ================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #26352b;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ==================================================
+   CABECERA
+   ================================================== */
+
+.cabecera {
+    width: 100%;
+    background-color: #f3f0d2;
+    border-bottom: 1px solid #d8d5b8;
+}
+
+
+/* ==================================================
+   LOGO
+   ================================================== */
+
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* TAMAÑO DEL LOGO */
+
+.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* TEXTO DEBAJO DEL LOGO */
+
+.logo p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #536258;
+    margin-top: 12px;
+}
+
+
+/* ==================================================
+   MENÚ
+   ================================================== */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    padding: 18px 20px;
+
+    border-top: 1px solid #dfddc5;
+}
+
+.menu a {
+    font-size: 13px;
+    font-weight: bold;
+
+    color: #294334;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #739477;
+}
+
+
+/* ==================================================
+   CARRUSEL
+   ================================================== */
+
+.carrusel {
+    width: 100%;
+    height: 600px;
+
+    overflow: hidden;
+}
+
+.imagenes {
+    width: 300%;
+    height: 100%;
+
+    display: flex;
+
+    animation: carrusel 15s infinite;
+}
+
+.slide {
+    width: 33.333%;
+    height: 100%;
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ==================================================
+   TEXTO DEL CARRUSEL
+   ================================================== */
+
+.texto-slide {
+    position: absolute;
+
+    left: 8%;
+    bottom: 12%;
+
+    background-color: #f3f0d2;
+
+    color: #294334;
+
+    padding: 25px 35px;
+
+    max-width: 550px;
+}
+
+.texto-slide h2 {
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+.texto-slide p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+   ANIMACIÓN DEL CARRUSEL
+   ================================================== */
+
+@keyframes carrusel {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    28% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-33.333%);
+    }
+
+    61% {
+        transform: translateX(-33.333%);
+    }
+
+    66% {
+        transform: translateX(-66.666%);
+    }
+
+    94% {
+        transform: translateX(-66.666%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* ==================================================
+   NOTICIAS / PROPUESTAS
+   ================================================== */
+
+.noticias {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 80px auto;
+}
+
+.noticias > h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    font-weight: 400;
+
+    color: #294334;
+}
+
+.linea {
+    width: 50px;
+    height: 3px;
+
+    background-color: #3e6649;
+
+    margin: 20px auto 50px auto;
+}
+
+
+/* ==================================================
+   TARJETAS
+   ================================================== */
+
+.tarjetas {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+
+    border: 1px solid #dfe5dc;
+
+    transition: 0.3s;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 25px;
+}
+
+.tarjeta h3 {
+    font-size: 21px;
+
+    margin-bottom: 15px;
+
+    color: #294334;
+}
+
+.tarjeta p {
+    color: #66736a;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.tarjeta a {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #3e6649;
+
+    transition: 0.3s;
+}
+
+.tarjeta a:hover {
+    color: #739477;
+}
+
+
+/* ==================================================
+   INFORMACIÓN
+   ================================================== */
+
+.informacion {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 550px;
+
+    background-color: #e9efd9;
+}
+
+.informacion-texto {
+    padding: 80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.informacion-texto h2 {
+    font-size: 38px;
+
+    font-weight: 400;
+
+    color: #294334;
+
+    margin-bottom: 25px;
+}
+
+.informacion-texto p {
+    color: #536258;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+    max-width: 550px;
+}
+
+
+/* ==================================================
+   BOTÓN
+   ================================================== */
+
+.informacion-texto button {
+    width: 150px;
+
+    padding: 13px;
+
+    margin-top: 20px;
+
+    background-color: #3e6649;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.informacion-texto button:hover {
+    background-color: #294334;
+}
+
+
+/* ==================================================
+   IMAGEN INFORMACIÓN
+   ================================================== */
+
+.informacion-imagen {
+    height: 100%;
+}
+
+.informacion-imagen img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ==================================================
+   CÓMO FUNCIONA
+   ================================================== */
+
+.como-funciona {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 80px auto;
+}
+
+.como-funciona > h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    font-weight: 400;
+
+    color: #294334;
+}
+
+
+/* ==================================================
+   PASOS
+   ================================================== */
+
+.pasos {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+.paso {
+    text-align: center;
+
+    padding: 20px;
+}
+
+.numero {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 20px auto;
+
+    border-radius: 50%;
+
+    background-color: #3e6649;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.paso h3 {
+    color: #294334;
+
+    font-size: 19px;
+
+    margin-bottom: 12px;
+}
+
+.paso p {
+    color: #66736a;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+    background-color: #294334;
+
+    color: white;
+}
+
+.footer-contenido {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+
+    padding: 60px 0;
+}
+
+.footer-contenido h3 {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+}
+
+.footer-contenido p {
+    color: #d1d9d3;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.footer-contenido a:hover {
+    color: white;
+}
+
+
+/* ==================================================
+   COPYRIGHT
+   ================================================== */
+
+.copyright {
+    border-top: 1px solid #496150;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.copyright p {
+    color: #aebbb2;
+
+    font-size: 13px;
+}
+
+
+/* ==================================================
+   MÓVIL
+   ================================================== */
+
+@media (max-width: 800px) {
+
+    /* MENÚ */
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+
+
+    /* LOGO EN MÓVIL */
+
+    .logo img {
+        width: 140px;
+    }
+
+
+    /* CARRUSEL */
+
+    .carrusel {
+        height: 450px;
+    }
+
+    .texto-slide {
+        left: 5%;
+        right: 5%;
+        bottom: 8%;
+
+        max-width: none;
+
+        padding: 20px;
+    }
+
+    .texto-slide h2 {
+        font-size: 27px;
+    }
+
+    .texto-slide p {
+        font-size: 15px;
+    }
+
+
+    /* NOTICIAS */
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* INFORMACIÓN */
+
+    .informacion {
+        grid-template-columns: 1fr;
+    }
+
+    .informacion-texto {
+        padding: 50px 30px;
+    }
+
+    .informacion-texto h2 {
+        font-size: 32px;
+    }
+
+    .informacion-imagen {
+        height: 350px;
+    }
+
+
+    /* CÓMO FUNCIONA */
+
+    .pasos {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FOOTER */
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 40px 30px;
+    }
+
+}
+```

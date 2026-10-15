@@ -1,0 +1,2394 @@
+/* ==================================================
+   CONFIGURACIÓN GENERAL
+   ================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #26352b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ==================================================
+   CABECERA
+   ================================================== */
+
+.cabecera {
+    width: 100%;
+    background-color: #f3f0d2;
+    border-bottom: 1px solid #d8d5b8;
+}
+
+
+/* ==================================================
+   LOGO
+   ================================================== */
+
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #536258;
+    margin-top: 12px;
+}
+
+
+/* ==================================================
+   MENÚ
+   ================================================== */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 18px 20px;
+    border-top: 1px solid #dfddc5;
+}
+
+.menu a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #294334;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #739477;
+}
+
+
+/* ==================================================
+   CONTENIDO PRINCIPAL
+   ================================================== */
+
+.contenido {
+    width: 90%;
+    max-width: 1100px;
+    margin: 70px auto 80px auto;
+}
+
+
+/* ==================================================
+   TÍTULO PRINCIPAL
+   ================================================== */
+
+.contenido > h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #294334;
+    margin-bottom: 25px;
+}
+
+.contenido > h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #3e6649;
+    margin: 22px auto 35px auto;
+}
+
+
+/* ==================================================
+   INTRODUCCIÓN
+   ================================================== */
+
+.contenido > p {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    color: #536258;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/* ==================================================
+   SECCIONES
+   ================================================== */
+
+.contenido section {
+    margin-top: 65px;
+    padding: 40px;
+    background-color: #f8f9f4;
+    border: 1px solid #e1e7dc;
+    border-left: 4px solid #3e6649;
+}
+
+
+/* ==================================================
+   TÍTULOS DE LAS SECCIONES
+   ================================================== */
+
+.contenido section h2 {
+    color: #294334;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.contenido section h2::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #739477;
+    margin-top: 15px;
+}
+
+
+/* ==================================================
+   SUBTÍTULOS DE LOS TIPOS DE GINCANAS
+   ================================================== */
+
+.contenido section h3 {
+    color: #294334;
+    font-size: 21px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   PÁRRAFOS DEL CONTENIDO
+   ================================================== */
+
+.contenido section p {
+    color: #66736a;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* ==================================================
+   LISTA DE METODOLOGÍA
+   ================================================== */
+
+.contenido section ol {
+    list-style: none;
+    counter-reset: pasos;
+    margin-top: 30px;
+}
+
+.contenido section ol li {
+    counter-increment: pasos;
+    position: relative;
+    padding: 20px 20px 20px 75px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e1e7dc;
+    color: #66736a;
+    line-height: 1.7;
+    transition: 0.3s;
+}
+
+.contenido section ol li::before {
+    content: counter(pasos);
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #3e6649;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contenido section ol li:hover {
+    border-color: #a9bea7;
+    transform: translateX(4px);
+}
+
+.contenido section ol li strong {
+    color: #294334;
+}
+
+
+/* ==================================================
+   SECCIÓN FINAL: LLAMADA A LA ACCIÓN
+   ================================================== */
+
+.contenido section:last-child {
+    text-align: center;
+    background-color: #e9efd9;
+    border: none;
+    padding: 50px 40px;
+}
+
+.contenido section:last-child h2 {
+    font-size: 32px;
+}
+
+.contenido section:last-child h2::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido section:last-child p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ==================================================
+   BOTÓN CONOCE VERDEO
+   ================================================== */
+
+.contenido section:last-child a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 25px;
+    background-color: #3e6649;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: 1px solid #3e6649;
+    transition: 0.3s;
+}
+
+.contenido section:last-child a:hover {
+    background-color: #294334;
+    border-color: #294334;
+    transform: translateY(-3px);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+    background-color: #294334;
+    color: #ffffff;
+}
+
+.footer-contenido {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 60px 0;
+}
+
+.footer-contenido h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-contenido p {
+    color: #d1d9d3;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-contenido a:hover {
+    color: #ffffff;
+}
+
+
+/* ==================================================
+   COPYRIGHT
+   ================================================== */
+
+.copyright {
+    border-top: 1px solid #496150;
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright p {
+    color: #aebbb2;
+    font-size: 13px;
+}
+
+
+/* ==================================================
+   TABLETS Y MÓVILES
+   ================================================== */
+
+@media (max-width: 800px) {
+
+    /* MENÚ */
+
+    .menu {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+
+
+    /* LOGO */
+
+    .logo img {
+        width: 140px;
+    }
+
+    .logo p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* CONTENIDO PRINCIPAL */
+
+    .contenido {
+        width: 90%;
+        margin: 45px auto 55px auto;
+    }
+
+    .contenido > h1 {
+        font-size: 34px;
+    }
+
+    .contenido > p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+
+    /* SECCIONES */
+
+    .contenido section {
+        margin-top: 40px;
+        padding: 25px;
+    }
+
+    .contenido section h2 {
+        font-size: 25px;
+    }
+
+    .contenido section h3 {
+        font-size: 19px;
+        margin-top: 25px;
+    }
+
+    .contenido section p {
+        font-size: 14px;
+    }
+
+
+    /* LISTA DE METODOLOGÍA */
+
+    .contenido section ol li {
+        padding: 18px 15px 18px 60px;
+        font-size: 14px;
+    }
+
+    .contenido section ol li::before {
+        left: 12px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+
+    /* LLAMADA A LA ACCIÓN */
+
+    .contenido section:last-child {
+        padding: 35px 25px;
+    }
+
+    .contenido section:last-child h2 {
+        font-size: 27px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 30px;
+    }
+
+}
+
+
+/* ==================================================
+   MÓVILES PEQUEÑOS
+   ================================================== */
+
+@media (max-width: 480px) {
+
+    .contenido {
+        width: 92%;
+        margin-top: 35px;
+    }
+
+    .contenido > h1 {
+        font-size: 30px;
+    }
+
+    .contenido section {
+        padding: 20px;
+    }
+
+    .contenido section h2 {
+        font-size: 23px;
+    }
+
+    .contenido section h3 {
+        font-size: 18px;
+    }
+
+    .contenido section ol li {
+        padding: 55px 15px 18px 15px;
+    }
+
+    .contenido section ol li::before {
+        top: 10px;
+        left: 15px;
+        transform: none;
+        width: 32px;
+        height: 32px;
+    }
+
+    .contenido section:last-child {
+        padding: 30px 20px;
+    }
+
+    .contenido section:last-child a {
+        padding: 13px 18px;
+        font-size: 12px;
+    }
+
+    .footer-contenido {
+        padding: 35px 20px;
+    }
+
+}
+/* ==================================================
+   AYUNTAMIENTOS: PRESENTACIÓN
+   ================================================== */
+
+.ayuntamientos {
+    width: 90%;
+    max-width: 1200px;
+    margin: 70px auto 80px auto;
+}
+
+.presentacion-ayuntamientos {
+    text-align: center;
+    padding: 55px 40px;
+    background-color: #f8f9f4;
+    border: 1px solid #e1e7dc;
+    border-top: 4px solid #3e6649;
+}
+
+.presentacion-ayuntamientos h1 {
+    color: #294334;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+.presentacion-ayuntamientos h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #3e6649;
+    margin: 22px auto;
+}
+
+.presentacion-ayuntamientos p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    color: #536258;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.presentacion-ayuntamientos .intro-ayuntamientos {
+    color: #294334;
+    font-size: 19px;
+}
+
+
+/* ==================================================
+   BOTONES DE AYUNTAMIENTOS
+   ================================================== */
+
+.boton-ayuntamientos,
+.boton-enviar {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #3e6649;
+    color: #ffffff;
+    border: 1px solid #3e6649;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-ayuntamientos {
+    margin-top: 15px;
+}
+
+.boton-ayuntamientos:hover,
+.boton-enviar:hover {
+    background-color: #294334;
+    border-color: #294334;
+}
+
+
+/* ==================================================
+   TÍTULOS Y SECCIONES
+   ================================================== */
+
+.ayuntamientos section:not(.presentacion-ayuntamientos) {
+    margin-top: 60px;
+}
+
+.ayuntamientos section h2 {
+    color: #294334;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 22px;
+}
+
+.ayuntamientos section h2::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #739477;
+    margin-top: 15px;
+}
+
+.ayuntamientos section p {
+    color: #66736a;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.texto-centro {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+
+/* ==================================================
+   VENTAJAS PARA LOS AYUNTAMIENTOS
+   ================================================== */
+
+.ventajas-ayuntamientos {
+    padding: 45px 0;
+}
+
+.ventajas-ayuntamientos > h2 {
+    text-align: center;
+}
+
+.ventajas-ayuntamientos > h2::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ventajas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.ventaja {
+    padding: 30px 25px;
+    background-color: #f8f9f4;
+    border: 1px solid #e1e7dc;
+    transition: 0.3s;
+}
+
+.ventaja:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.ventaja-icono {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #3e6649;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ventaja h3 {
+    color: #294334;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.ventaja p {
+    margin-bottom: 0;
+}
+
+
+/* ==================================================
+   PROCESO DE TRABAJO
+   ================================================== */
+
+.proceso-ayuntamientos {
+    padding: 40px;
+    background-color: #e9efd9;
+}
+
+.pasos-ayuntamientos {
+    list-style: none;
+    counter-reset: proceso;
+    margin-top: 30px;
+}
+
+.pasos-ayuntamientos li {
+    counter-increment: proceso;
+    position: relative;
+    padding: 22px 25px 22px 85px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dfe5dc;
+    color: #66736a;
+}
+
+.pasos-ayuntamientos li::before {
+    content: counter(proceso);
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #3e6649;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.pasos-ayuntamientos strong,
+.pasos-ayuntamientos span {
+    display: block;
+}
+
+.pasos-ayuntamientos strong {
+    color: #294334;
+    margin-bottom: 5px;
+}
+
+.pasos-ayuntamientos span {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   SECCIÓN DE CONTACTO
+   ================================================== */
+
+.contacto-ayuntamientos {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 45px;
+    align-items: start;
+    padding: 45px;
+    background-color: #f8f9f4;
+    border: 1px solid #e1e7dc;
+    border-top: 4px solid #3e6649;
+    scroll-margin-top: 30px;
+}
+
+.contacto-introduccion h2 {
+    font-size: 32px;
+}
+
+.contacto-nota {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #e9efd9;
+    border-left: 3px solid #3e6649;
+}
+
+.contacto-nota h3 {
+    color: #294334;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contacto-nota ul {
+    padding-left: 20px;
+}
+
+.contacto-nota li {
+    color: #536258;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+
+/* ==================================================
+   FORMULARIO
+   ================================================== */
+
+.formulario-contenedor {
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dfe5dc;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.formulario-contenedor > h3 {
+    color: #294334;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.formulario-descripcion {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.formulario-ayuntamientos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+.campo-formulario > label:not(.aceptacion) {
+    color: #294334;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo-formulario input:not([type="checkbox"]),
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d5ddd2;
+    background-color: #ffffff;
+    color: #26352b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 0;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.campo-formulario input:not([type="checkbox"]),
+.campo-formulario select {
+    min-height: 45px;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: #3e6649;
+    box-shadow: 0 0 0 3px rgba(62, 102, 73, 0.12);
+}
+
+.campo-formulario input::placeholder,
+.campo-formulario textarea::placeholder {
+    color: #8a968c;
+}
+
+
+/* ==================================================
+   PRIVACIDAD
+   ================================================== */
+
+.aceptacion {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #536258;
+    font-size: 13px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.aceptacion input {
+    flex-shrink: 0;
+    margin-top: 4px;
+    accent-color: #3e6649;
+}
+
+
+/* ==================================================
+   ENVÍO DEL FORMULARIO
+   ================================================== */
+
+.boton-enviar {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nota-formulario {
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #66736a;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* ==================================================
+   RESPONSIVE: TABLETS Y MÓVILES
+   ================================================== */
+
+@media (max-width: 800px) {
+
+    .ayuntamientos {
+        width: 90%;
+        margin: 45px auto 55px;
+    }
+
+    .presentacion-ayuntamientos {
+        padding: 35px 25px;
+    }
+
+    .presentacion-ayuntamientos h1 {
+        font-size: 34px;
+    }
+
+    .presentacion-ayuntamientos p {
+        font-size: 15px;
+    }
+
+    .presentacion-ayuntamientos .intro-ayuntamientos {
+        font-size: 17px;
+    }
+
+    .ayuntamientos section:not(.presentacion-ayuntamientos) {
+        margin-top: 40px;
+    }
+
+    .ayuntamientos section h2 {
+        font-size: 27px;
+    }
+
+    .ventajas-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ventaja {
+        padding: 25px;
+    }
+
+    .proceso-ayuntamientos {
+        padding: 30px 25px;
+    }
+
+    .contacto-ayuntamientos {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 25px;
+    }
+
+    .formulario-contenedor {
+        padding: 25px;
+    }
+}
+
+
+/* ==================================================
+   RESPONSIVE: MÓVILES PEQUEÑOS
+   ================================================== */
+
+@media (max-width: 480px) {
+
+    .ayuntamientos {
+        width: 92%;
+        margin-top: 30px;
+    }
+
+    .presentacion-ayuntamientos {
+        padding: 30px 20px;
+    }
+
+    .presentacion-ayuntamientos h1 {
+        font-size: 29px;
+    }
+
+    .ayuntamientos section h2,
+    .contacto-introduccion h2 {
+        font-size: 24px;
+    }
+
+    .ventaja {
+        padding: 22px;
+    }
+
+    .proceso-ayuntamientos {
+        padding: 25px 18px;
+    }
+
+    .pasos-ayuntamientos li {
+        padding: 65px 18px 20px;
+    }
+
+    .pasos-ayuntamientos li::before {
+        top: 15px;
+        left: 18px;
+        transform: none;
+        width: 35px;
+        height: 35px;
+    }
+
+    .contacto-ayuntamientos {
+        padding: 22px 16px;
+    }
+
+    .formulario-contenedor {
+        padding: 20px 15px;
+    }
+
+    .formulario-ayuntamientos {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .campo-completo {
+        grid-column: auto;
+    }
+
+    .boton-ayuntamientos,
+    .boton-enviar {
+        font-size: 12px;
+    }
+}
+/* ==================================================
+   INSTITUCIONES EDUCATIVAS: PRESENTACIÓN
+   ================================================== */
+
+.instituciones {
+    width: 90%;
+    max-width: 1200px;
+    margin: 70px auto 80px;
+}
+
+.presentacion-educativa {
+    padding: 55px 40px;
+    text-align: center;
+    background-color: #f8f9f4;
+    border: 1px solid #e1e7dc;
+    border-top: 4px solid #3e6649;
+}
+
+.presentacion-educativa h1 {
+    color: #294334;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+.presentacion-educativa h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #3e6649;
+    margin: 22px auto;
+}
+
+.presentacion-educativa p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    color: #536258;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.presentacion-educativa .intro-educativa {
+    color: #294334;
+    font-size: 19px;
+}
+
+
+/* ==================================================
+   BOTÓN PRINCIPAL
+   ================================================== */
+
+.boton-educativo,
+.boton-enviar-educativo {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #3e6649;
+    color: #ffffff;
+    border: 1px solid #3e6649;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-educativo {
+    margin-top: 15px;
+}
+
+.boton-educativo:hover,
+.boton-enviar-educativo:hover {
+    background-color: #294334;
+    border-color: #294334;
+}
+
+
+/* ==================================================
+   TÍTULOS Y PÁRRAFOS
+   ================================================== */
+
+.instituciones section:not(.presentacion-educativa) {
+    margin-top: 60px;
+}
+
+.instituciones section h2 {
+    color: #294334;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 22px;
+}
+
+.instituciones section h2::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #739477;
+    margin-top: 15px;
+}
+
+.instituciones section p {
+    color: #66736a;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.instituciones .texto-centro {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+
+/* ==================================================
+   BENEFICIOS EDUCATIVOS
+   ================================================== */
+
+.beneficios-educativos {
+    padding: 40px 0;
+}
+
+.beneficios-educativos > h2 {
+    text-align: center;
+}
+
+.beneficios-educativos > h2::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.beneficio-educativo {
+    padding: 30px 25px;
+    background-color: #f8f9f4;
+    border: 1px solid #e1e7dc;
+    transition: 0.3s;
+}
+
+.beneficio-educativo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.beneficio-numero {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #3e6649;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.beneficio-educativo h3,
+.tipo-educativo h3 {
+    color: #294334;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.beneficio-educativo p,
+.tipo-educativo p {
+    margin-bottom: 0;
+}
+
+
+/* ==================================================
+   TIPOS DE ACTIVIDADES
+   ================================================== */
+
+.tipos-educativos {
+    padding: 40px;
+    background-color: #e9efd9;
+}
+
+.tipos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tipo-educativo {
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #dfe5dc;
+    transition: 0.3s;
+}
+
+.tipo-educativo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ==================================================
+   METODOLOGÍA EDUCATIVA
+   ================================================== */
+
+.metodologia-educativa {
+    padding: 40px;
+    background-color: #f8f9f4;
+    border: 1px solid #e1e7dc;
+    border-left: 4px solid #3e6649;
+}
+
+.pasos-educativos {
+    list-style: none;
+    counter-reset: paso-educativo;
+    margin-top: 30px;
+}
+
+.pasos-educativos li {
+    counter-increment: paso-educativo;
+    position: relative;
+    padding: 22px 25px 22px 85px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dfe5dc;
+    color: #66736a;
+}
+
+.pasos-educativos li::before {
+    content: counter(paso-educativo);
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #3e6649;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.pasos-educativos strong,
+.pasos-educativos span {
+    display: block;
+}
+
+.pasos-educativos strong {
+    color: #294334;
+    margin-bottom: 5px;
+}
+
+.pasos-educativos span {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   OBJETIVO EDUCATIVO
+   ================================================== */
+
+.objetivo-educativo {
+    padding: 40px;
+    background-color: #e9efd9;
+}
+
+.objetivo-educativo p {
+    max-width: 900px;
+}
+
+
+/* ==================================================
+   CONTACTO EDUCATIVO
+   ================================================== */
+
+.contacto-educativo {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 45px;
+    align-items: start;
+    padding: 45px;
+    background-color: #f8f9f4;
+    border: 1px solid #e1e7dc;
+    border-top: 4px solid #3e6649;
+    scroll-margin-top: 30px;
+}
+
+.contacto-educativo-texto h2 {
+    font-size: 32px;
+}
+
+.nota-educativa {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #e9efd9;
+    border-left: 3px solid #3e6649;
+}
+
+.nota-educativa h3 {
+    color: #294334;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.nota-educativa ul {
+    padding-left: 20px;
+}
+
+.nota-educativa li {
+    color: #536258;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+
+/* ==================================================
+   FORMULARIO EDUCATIVO
+   ================================================== */
+
+.formulario-educativo-contenedor {
+    min-width: 0;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dfe5dc;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.formulario-educativo-contenedor > h3 {
+    color: #294334;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.descripcion-formulario {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.formulario-educativo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.campo-educativo {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.campo-educativo-completo {
+    grid-column: 1 / -1;
+}
+
+.campo-educativo > label:not(.aceptacion-educativa) {
+    color: #294334;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo-educativo input:not([type="checkbox"]),
+.campo-educativo select,
+.campo-educativo textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d5ddd2;
+    background-color: #ffffff;
+    color: #26352b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 0;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.campo-educativo input:not([type="checkbox"]),
+.campo-educativo select {
+    min-height: 45px;
+}
+
+.campo-educativo textarea {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.campo-educativo input:focus,
+.campo-educativo select:focus,
+.campo-educativo textarea:focus {
+    outline: none;
+    border-color: #3e6649;
+    box-shadow: 0 0 0 3px rgba(62, 102, 73, 0.12);
+}
+
+.campo-educativo input::placeholder,
+.campo-educativo textarea::placeholder {
+    color: #8a968c;
+}
+
+
+/* ==================================================
+   PRIVACIDAD
+   ================================================== */
+
+.aceptacion-educativa {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #536258;
+    font-size: 13px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.aceptacion-educativa input {
+    flex-shrink: 0;
+    margin-top: 4px;
+    accent-color: #3e6649;
+}
+
+
+/* ==================================================
+   BOTÓN DE ENVÍO
+   ================================================== */
+
+.boton-enviar-educativo {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nota-formulario-educativo {
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #66736a;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* ==================================================
+   TABLETS Y MÓVILES
+   ================================================== */
+
+@media (max-width: 800px) {
+
+    .instituciones {
+        width: 90%;
+        margin: 45px auto 55px;
+    }
+
+    .presentacion-educativa {
+        padding: 35px 25px;
+    }
+
+    .presentacion-educativa h1 {
+        font-size: 34px;
+    }
+
+    .presentacion-educativa p {
+        font-size: 15px;
+    }
+
+    .presentacion-educativa .intro-educativa {
+        font-size: 17px;
+    }
+
+    .instituciones section:not(.presentacion-educativa) {
+        margin-top: 40px;
+    }
+
+    .instituciones section h2 {
+        font-size: 27px;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tipos-educativos,
+    .metodologia-educativa,
+    .objetivo-educativo {
+        padding: 30px 25px;
+    }
+
+    .contacto-educativo {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 25px;
+    }
+
+    .formulario-educativo-contenedor {
+        padding: 25px;
+    }
+}
+
+
+/* ==================================================
+   MÓVILES PEQUEÑOS
+   ================================================== */
+
+@media (max-width: 480px) {
+
+    .instituciones {
+        width: 92%;
+        margin-top: 30px;
+    }
+
+    .presentacion-educativa {
+        padding: 30px 20px;
+    }
+
+    .presentacion-educativa h1 {
+        font-size: 29px;
+    }
+
+    .instituciones section h2,
+    .contacto-educativo-texto h2 {
+        font-size: 24px;
+    }
+
+    .tipos-educativos,
+    .metodologia-educativa,
+    .objetivo-educativo {
+        padding: 25px 18px;
+    }
+
+    .tipos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pasos-educativos li {
+        padding: 65px 18px 20px;
+    }
+
+    .pasos-educativos li::before {
+        top: 15px;
+        left: 18px;
+        transform: none;
+        width: 35px;
+        height: 35px;
+    }
+
+    .contacto-educativo {
+        padding: 22px 16px;
+    }
+
+    .formulario-educativo-contenedor {
+        padding: 20px 15px;
+    }
+
+    .formulario-educativo {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .campo-educativo-completo {
+        grid-column: auto;
+    }
+
+    .boton-educativo,
+    .boton-enviar-educativo {
+        font-size: 12px;
+    }
+}
+```css
+/* =========================================
+   PÁGINA NOSOTROS - VERDEO
+   ========================================= */
+
+/* Contenedor general */
+
+.contenido.nosotros {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto 80px;
+    color: #26352b;
+}
+
+.nosotros * {
+    box-sizing: border-box;
+}
+
+.nosotros img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.nosotros section {
+    margin: 0 0 90px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.nosotros h1,
+.nosotros h2,
+.nosotros h3,
+.nosotros p {
+    margin-top: 0;
+}
+
+.nosotros h1,
+.nosotros h2,
+.nosotros h3 {
+    color: #294334;
+}
+
+.nosotros p {
+    color: #536258;
+    line-height: 1.8;
+}
+
+.etiqueta-nosotros {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #3e6649;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   1. PRESENTACIÓN PRINCIPAL
+   ========================================= */
+
+.nosotros .nosotros-hero {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 110px;
+}
+
+.nosotros-hero-texto {
+    padding: 15px 0;
+}
+
+.nosotros .nosotros-hero h1 {
+    margin-bottom: 24px;
+    font-size: clamp(36px, 4.2vw, 55px);
+    line-height: 1.12;
+    text-align: left;
+    letter-spacing: -1.5px;
+}
+
+.nosotros .nosotros-intro {
+    color: #294334;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.nosotros-hero-texto > p:not(.nosotros-intro) {
+    margin-bottom: 28px;
+    font-size: 16px;
+}
+
+.nosotros-hero-imagen {
+    position: relative;
+    min-height: 440px;
+}
+
+.nosotros-hero-imagen > img {
+    min-height: 440px;
+    border-radius: 24px;
+}
+
+.imagen-destacada-texto {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    padding: 22px 25px;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(38, 53, 43, 0.12);
+}
+
+.imagen-destacada-texto span {
+    display: block;
+    margin-bottom: 5px;
+    color: #294334;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.imagen-destacada-texto p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+/* Botones */
+
+.boton-nosotros {
+    display: inline-block;
+    padding: 14px 24px;
+    background: #3e6649;
+    color: #ffffff;
+    border: 2px solid #3e6649;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.25s ease,
+                color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.boton-nosotros:hover {
+    background: #294334;
+    border-color: #294334;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.boton-secundario-nosotros {
+    margin-left: 8px;
+    background: transparent;
+    color: #294334;
+}
+
+.boton-secundario-nosotros:hover {
+    background: #e9efd9;
+    border-color: #3e6649;
+    color: #294334;
+}
+
+
+/* =========================================
+   2. NUESTRA MISIÓN
+   ========================================= */
+
+.nosotros .mision-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+    margin-bottom: 110px;
+}
+
+.mision-imagen {
+    height: 460px;
+}
+
+.mision-imagen img {
+    border-radius: 24px;
+}
+
+.mision-texto h2,
+.adaptacion-texto h2 {
+    margin-bottom: 22px;
+    font-size: clamp(30px, 3vw, 40px);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.mision-texto > p,
+.adaptacion-texto > p {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.mision-destacado {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-top: 28px;
+    padding: 22px;
+    background: #e9efd9;
+    border-left: 5px solid #3e6649;
+    border-radius: 12px;
+}
+
+.mision-icono {
+    flex-shrink: 0;
+    color: #3e6649;
+    font-size: 36px;
+}
+
+.mision-destacado p {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.mision-destacado strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #294334;
+}
+
+
+/* =========================================
+   3. ENCABEZADOS DE SECCIÓN
+   ========================================= */
+
+.nosotros .encabezado-seccion-nosotros {
+    max-width: 760px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.nosotros .encabezado-seccion-nosotros h2 {
+    margin-bottom: 18px;
+    font-size: clamp(30px, 3.5vw, 42px);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.nosotros .encabezado-seccion-nosotros p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   4. A QUIÉN VA DIRIGIDO
+   ========================================= */
+
+.nosotros .publico-nosotros {
+    padding: 65px 40px;
+    background: #f6f7f0;
+    border-radius: 24px;
+}
+
+.publico-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.publico-tarjeta {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e5e9df;
+    border-radius: 17px;
+    box-shadow: 0 5px 18px rgba(38, 53, 43, 0.05);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.publico-tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(38, 53, 43, 0.1);
+}
+
+.publico-imagen {
+    height: 210px;
+    overflow: hidden;
+}
+
+.publico-imagen img {
+    border-radius: 0;
+    transition: transform 0.4s ease;
+}
+
+.publico-tarjeta:hover .publico-imagen img {
+    transform: scale(1.04);
+}
+
+.publico-contenido {
+    padding: 23px 20px 25px;
+}
+
+.publico-contenido h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.publico-contenido p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   5. FUNCIONAMIENTO DE LA GINCANA
+   ========================================= */
+
+.nosotros .funcionamiento-nosotros {
+    margin-top: 100px;
+}
+
+.funcionamiento-imagen {
+    height: 350px;
+    margin-bottom: 42px;
+}
+
+.funcionamiento-imagen img {
+    border-radius: 22px;
+}
+
+.pasos-nosotros {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 12px;
+}
+
+.paso-nosotros {
+    flex: 1;
+    min-width: 0;
+    padding: 25px 17px;
+    background: #f6f7f0;
+    border: 1px solid #e5e9df;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.paso-numero {
+    display: block;
+    margin-bottom: 12px;
+    color: #8b9c7e;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.paso-icono {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.paso-nosotros h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.paso-nosotros p {
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.flecha-pasos {
+    display: flex;
+    align-items: center;
+    color: #7c9470;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.paso-final {
+    background: #e9efd9;
+    border-color: #d5dfc6;
+}
+
+.frase-final-funcionamiento {
+    margin: 28px 0 0;
+    color: #3e6649 !important;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* =========================================
+   6. ADAPTACIÓN A CADA PUEBLO
+   ========================================= */
+
+.nosotros .adaptacion-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.lista-adaptacion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-adaptacion li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #536258;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.lista-adaptacion li span {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #e9efd9;
+    color: #3e6649;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.adaptacion-imagenes {
+    position: relative;
+    min-height: 470px;
+    padding: 0 35px 35px 0;
+}
+
+.adaptacion-imagen-principal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85% !important;
+    height: 350px !important;
+    border-radius: 22px !important;
+}
+
+.adaptacion-imagen-secundaria {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 55% !important;
+    height: 230px !important;
+    border: 8px solid #ffffff;
+    border-radius: 22px !important;
+}
+
+
+/* =========================================
+   7. NUESTROS VALORES
+   ========================================= */
+
+.nosotros .valores-nosotros {
+    padding: 65px 40px;
+    background: #f6f7f0;
+    border-radius: 24px;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.valor-nosotros {
+    padding: 30px 22px;
+    background: #ffffff;
+    border: 1px solid #e5e9df;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.valor-nosotros:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(38, 53, 43, 0.08);
+}
+
+.valor-nosotros > span {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 36px;
+}
+
+.valor-nosotros h3 {
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.valor-nosotros p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   8. CONTACTO FINAL
+   ========================================= */
+
+.nosotros .contacto-nosotros {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 30px;
+    padding: 45px;
+    background: #e9efd9;
+    border-radius: 24px;
+}
+
+.contacto-nosotros-texto h2 {
+    margin-bottom: 20px;
+    font-size: clamp(29px, 3vw, 39px);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.contacto-nosotros-texto > p {
+    margin-bottom: 27px;
+    font-size: 16px;
+}
+
+.contacto-nosotros-texto .boton-nosotros {
+    margin: 0 8px 10px 0;
+}
+
+.contacto-nosotros-imagen {
+    height: 350px;
+}
+
+.contacto-nosotros-imagen img {
+    border-radius: 20px;
+}
+
+
+/* =========================================
+   9. TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .nosotros .nosotros-hero {
+        gap: 30px;
+    }
+
+    .nosotros .mision-nosotros,
+    .nosotros .adaptacion-nosotros {
+        gap: 35px;
+    }
+
+    .publico-grid,
+    .valores-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pasos-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .flecha-pasos {
+        display: none;
+    }
+
+    .paso-final {
+        grid-column: 1 / -1;
+    }
+
+    .nosotros .publico-nosotros,
+    .nosotros .valores-nosotros {
+        padding: 45px 28px;
+    }
+
+    .nosotros .contacto-nosotros {
+        gap: 30px;
+        padding: 32px;
+    }
+
+    .boton-secundario-nosotros {
+        margin-left: 0;
+    }
+}
+
+
+/* =========================================
+   10. MÓVILES Y TABLETS PEQUEÑAS
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .contenido.nosotros {
+        width: 92%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .nosotros .nosotros-hero,
+    .nosotros .mision-nosotros,
+    .nosotros .adaptacion-nosotros,
+    .nosotros .contacto-nosotros {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 65px;
+    }
+
+    .nosotros .nosotros-hero h1 {
+        font-size: 38px;
+        letter-spacing: -0.8px;
+    }
+
+    .nosotros .nosotros-intro {
+        font-size: 17px;
+    }
+
+    .nosotros-hero-imagen,
+    .nosotros-hero-imagen > img {
+        min-height: 330px;
+        height: 330px;
+    }
+
+    .imagen-destacada-texto {
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        padding: 16px;
+    }
+
+    .mision-imagen {
+        height: 320px;
+    }
+
+    .mision-texto h2,
+    .adaptacion-texto h2 {
+        font-size: 32px;
+    }
+
+    .nosotros .publico-nosotros,
+    .nosotros .valores-nosotros {
+        padding: 35px 18px;
+        border-radius: 18px;
+    }
+
+    .nosotros .encabezado-seccion-nosotros {
+        margin-bottom: 30px;
+    }
+
+    .nosotros .encabezado-seccion-nosotros h2 {
+        font-size: 30px;
+    }
+
+    .publico-grid,
+    .valores-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .publico-imagen {
+        height: 240px;
+    }
+
+    .publico-contenido {
+        padding: 20px;
+    }
+
+    .nosotros .funcionamiento-nosotros {
+        margin-top: 65px;
+    }
+
+    .funcionamiento-imagen {
+        height: 250px;
+        margin-bottom: 25px;
+    }
+
+    .pasos-nosotros {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .paso-final {
+        grid-column: auto;
+    }
+
+    .paso-nosotros {
+        padding: 25px;
+    }
+
+    .paso-nosotros p {
+        font-size: 14px;
+    }
+
+    .adaptacion-imagenes {
+        min-height: 350px;
+        padding: 0 20px 25px 0;
+    }
+
+    .adaptacion-imagen-principal {
+        height: 270px !important;
+    }
+
+    .adaptacion-imagen-secundaria {
+        height: 170px !important;
+        border-width: 5px;
+    }
+
+    .nosotros .contacto-nosotros {
+        padding: 28px 22px;
+    }
+
+    .contacto-nosotros-texto h2 {
+        font-size: 31px;
+    }
+
+    .contacto-nosotros-imagen {
+        height: 250px;
+    }
+
+    .boton-nosotros {
+        max-width: 100%;
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+
+    .boton-secundario-nosotros {
+        margin-left: 0;
+    }
+}
+
+
+/* =========================================
+   11. MÓVILES PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    .nosotros .nosotros-hero h1 {
+        font-size: 33px;
+    }
+
+    .nosotros .encabezado-seccion-nosotros h2 {
+        font-size: 27px;
+    }
+
+    .mision-texto h2,
+    .adaptacion-texto h2,
+    .contacto-nosotros-texto h2 {
+        font-size: 28px;
+    }
+
+    .imagen-destacada-texto span {
+        font-size: 17px;
+    }
+
+    .mision-destacado {
+        align-items: flex-start;
+        padding: 16px;
+    }
+}
+```
