@@ -2402,3 +2402,39 @@ footer {
     margin: 30px auto;
     border-radius: 15px;
 }
+/* =========================================
+   MAPA DE LA GINCANA
+   ========================================= */
+
+.mapa-gincana {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto 35px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #e1e7dc;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(38, 53, 43, 0.08);
+}
+
+.mapa-gincana img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Adaptación a móviles */
+
+@media (max-width: 800px) {
+    .mapa-gincana {
+        margin: 25px auto 30px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapa-gincana {
+        margin: 20px auto 25px;
+    }
+}
